@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["stylesheet","image"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/(copilot|mona|light|keyboard)"
+    }
+  }
+]
