@@ -34,6 +34,7 @@ navigator.sendBeacon = () => 0;
         return setAttr.call(this, a, b);
     }
   }
+  // var kkk = {};
   let hasOwnProperty = Object.prototype.hasOwnProperty;
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
@@ -99,12 +100,18 @@ navigator.sendBeacon = () => 0;
       case "ariaValueNow":
       case "ariaValueText":
       case "borderRadius":
+      case "metaKey":
       case "role":
       case "tabIndex":
       case "textDecoration":
+      case "tiltX":
+      case "tiltY":
       case "title":
+      case "twist":
+      case "xmlns":
         return 0;
       default:
+        // typeof a == "string" && a.length > 2 && (kkk[a] ? ++kkk[a] : kkk[a] = 1);
         return hasOwnProperty.call(this, a);
     }
 
