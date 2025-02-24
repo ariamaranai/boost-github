@@ -34,7 +34,6 @@ navigator.sendBeacon = () => 0;
         return setAttr.call(this, a, b);
     }
   }
-  // var kkk = {};
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
       case "alt":
@@ -112,8 +111,8 @@ navigator.sendBeacon = () => 0;
       case "borderRadius":
       case "borderTopRightRadius":
       case "borderTopLeftRadius":
-      case "color":
       case "metaKey":
+      case "onError":
       case "onMouseEnter":
       case "onMouseLeave":
       case "onMouseOut":
