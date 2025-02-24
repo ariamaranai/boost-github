@@ -1,3 +1,4 @@
+Math.random =
 navigator.sendBeacon = () => 0;
 {
   let setAttr = Element.prototype.setAttribute;
@@ -34,7 +35,6 @@ navigator.sendBeacon = () => 0;
         return setAttr.call(this, a, b);
     }
   }
-  // var kkk = {};
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
       case "@media screen and (max-width: 320px)":
@@ -120,7 +120,7 @@ navigator.sendBeacon = () => 0;
       case "data-hovercard-url":
       case "data-inactive":
       case "data-testid":
-      case "label":
+      // case "label":
       case "metaKey":
       case "onError":
       case "onMouseEnter":
