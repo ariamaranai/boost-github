@@ -34,8 +34,11 @@ navigator.sendBeacon = () => 0;
         return setAttr.call(this, a, b);
     }
   }
+  // var kkk = {};
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
+      case "@media screen and (max-width: 320px)":
+      case "@media screen and (max-width: 380px)":
       case "alt":
       case "altKey":
       case "aria-activedescendant":
@@ -108,9 +111,16 @@ navigator.sendBeacon = () => 0;
       case "ariaValueMin":
       case "ariaValueNow":
       case "ariaValueText":
+      case "autoCorrect":
+      case "autoFocus":
       case "borderRadius":
       case "borderTopRightRadius":
       case "borderTopLeftRadius":
+      case "data-hover-color":
+      case "data-hovercard-url":
+      case "data-inactive":
+      case "data-testid":
+      case "label":
       case "metaKey":
       case "onError":
       case "onMouseEnter":
@@ -118,6 +128,11 @@ navigator.sendBeacon = () => 0;
       case "onMouseOut":
       case "onMouseOver":
       case "role":
+      case "showEnterprise":
+      case "showEnterpriseSettings":
+      case "showEnterprises":
+      case "showSponsors":
+      case "spellCheck":
       case "tabIndex":
       case "textDecoration":
       case "tiltX":
