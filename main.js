@@ -35,10 +35,10 @@ navigator.sendBeacon = () => 0;
     }
   }
   // var kkk = {};
-  let hasOwnProperty = Object.prototype.hasOwnProperty;
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
       case "alt":
+      case "altKey":
       case "aria-activedescendant":
       case "aria-busy":
       case "aria-controls":
@@ -49,10 +49,20 @@ navigator.sendBeacon = () => 0;
       case "aria-haspopup":
       case "aria-hidden":
       case "aria-invalid":
+      case "aria-keyshortcuts":
       case "aria-label":
       case "aria-labelledby":
-      case "aria-presswed":
+      case "aria-lebel":
+      case "aria-live":
+      case "aria-multiline":
+      case "aria-pressed":
+      case "aria-readonly":
       case "aria-required":
+      case "aria-selected":
+      case "aria-valuemax":
+      case "aria-valuemin":
+      case "aria-valuenow":
+      case "aria-valuetext":
       case "ariaActiveDescendant":
       case "ariaAtomic":
       case "ariaAutoComplete":
@@ -100,7 +110,14 @@ navigator.sendBeacon = () => 0;
       case "ariaValueNow":
       case "ariaValueText":
       case "borderRadius":
+      case "borderTopRightRadius":
+      case "borderTopLeftRadius":
+      case "color":
       case "metaKey":
+      case "onMouseEnter":
+      case "onMouseLeave":
+      case "onMouseOut":
+      case "onMouseOver":
       case "role":
       case "tabIndex":
       case "textDecoration":
@@ -112,8 +129,7 @@ navigator.sendBeacon = () => 0;
         return 0;
       default:
         // typeof a == "string" && a.length > 2 && (kkk[a] ? ++kkk[a] : kkk[a] = 1);
-        return hasOwnProperty.call(this, a);
+        return Object.hasOwn(this, a);
     }
-
   }
 }
