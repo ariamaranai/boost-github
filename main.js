@@ -1,5 +1,6 @@
 Math.random =
 navigator.sendBeacon = () => 0;
+/*
 {
   let setAttr = Element.prototype.setAttribute;
   Element.prototype.setAttribute = function (a, b) {
@@ -35,6 +36,7 @@ navigator.sendBeacon = () => 0;
         return setAttr.call(this, a, b);
     }
   }
+  // var kkk = {};
   Object.prototype.hasOwnProperty = function (a) {
     switch (a) {
       case "@media screen and (max-width: 320px)":
@@ -146,4 +148,4 @@ navigator.sendBeacon = () => 0;
         return Object.hasOwn(this, a);
     }
   }
-}
+}*/
