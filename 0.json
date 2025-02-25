@@ -9,7 +9,7 @@
       "resourceTypes": ["stylesheet","image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://github\\.githubassets\\.com/assets/(copilot|mona|light|keyboard)"
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/(copilot|mona|light)"
     }
   }
 ]
