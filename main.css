@@ -1,4 +1,6 @@
 ::-webkit-scrollbar,
-.footer {
-  display: none
+.footer,
+.user-status-container,
+.js-notice {
+  display: none !important
 }
