@@ -6,10 +6,23 @@
       "type": "block"
     },
     "condition": {
-      "resourceTypes": ["stylesheet","image"],
+      "resourceTypes": ["script","stylesheet","image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
       "regexFilter": "^https://github\\.githubassets\\.com/assets/(copilot|mona|light)"
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2099999998,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "resourceTypes": ["script"],
+      "requestMethods": ["get"],
+      "domainType": "thirdParty",
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/keyboard"
     }
   }
 ]
