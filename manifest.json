@@ -19,7 +19,7 @@
   "content_scripts": [{
     "css": ["main.css"],
     "js": ["main.js"],
-    "matches": ["https://github.com/*"],
+    "matches": ["https://github.com/*", "https://gist.github.com/*"],
     "world": "MAIN",
     "run_at": "document_start"
   }]
