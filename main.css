@@ -1,6 +1,8 @@
 ::-webkit-scrollbar,
+.d-md-flex,
 .footer,
 .user-status-container,
-.js-notice {
+.js-notice,
+.flex-auto.col-md-8.col-lg-8.px-3.px-sm-3.px-md-0 {
   display: none !important
 }

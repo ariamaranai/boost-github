@@ -1,6 +1,5 @@
 navigator.sendBeacon = () => 0;
 // Math.random = () => 0;
-
 {
   // var z = {};
   let has = (a, b) => {
