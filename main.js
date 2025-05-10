@@ -2,7 +2,7 @@ navigator.sendBeacon = () => 0;
 // Math.random = () => 0;
 {
   // var z = {};
-  let has = (a, b) => {
+  Object.prototype.hasOwnProperty.call = (a, b) => {
     switch (b) {
       case "aria-activedescendant":
       case "aria-busy":
@@ -26,6 +26,9 @@ navigator.sendBeacon = () => 0;
       case "ariaLabel":
       case "ariaLabelledBy":
       case "data-testid":
+      case "onAuxClick":
+      case "onTouchEnd":
+      case "role":
       case "tabIndex":
         return 0;
       default:
@@ -33,6 +36,4 @@ navigator.sendBeacon = () => 0;
         return b in a;
     }
   }
-  Object.prototype.hasOwnProperty = function (a) { return has(this, a) }
-  Object.prototype.hasOwnProperty.call = has;
 }
