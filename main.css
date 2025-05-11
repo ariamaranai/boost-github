@@ -2,7 +2,6 @@
 .d-md-flex,
 .footer,
 .user-status-container,
-.js-notice,
-.flex-auto.col-md-8.col-lg-8.px-3.px-sm-3.px-md-0 {
+.js-notice {
   display: none !important
 }
