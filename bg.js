@@ -2,7 +2,7 @@ chrome.cookies.get({
   url: "https://github.com",
   name: "dotcom_user"
 }, ({ value }) =>
-  chrome.declarativeNetRequest.updateSessionRules(
+  chrome.declarativeNetRequest.updateDynamicRules(
     value
       ? {
         addRules: [{
