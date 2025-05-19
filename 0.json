@@ -9,7 +9,8 @@
       "resourceTypes": ["script","stylesheet","image"],
       "requestMethods": ["get"],
       "domainType": "thirdParty",
-      "regexFilter": "^https://github\\.githubassets\\.com/assets/(?:copilo|keyboa|notifi|mona|ligh)"
+      "regexFilter": "^https://github\\.githubassets\\.com/assets/(?:copilo|keyboa|notifi|mona|ligh)",
+      "isUrlFilterCaseSensitive": true
     }
   }
 ]
