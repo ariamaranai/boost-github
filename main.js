@@ -21,9 +21,9 @@ navigator.sendBeacon = () => 0;
       case "ariaActiveDescendant":
       case "ariaControls":
       case "ariaDescribedBy":
-      case "ariaExpanded":
+       case "ariaExpanded":
       case "ariaHasPopup":
-      case "ariaLabel":
+      // case "ariaLabel":
       case "ariaLabelledBy":
       case "data-testid":
       case "onAuxClick":
