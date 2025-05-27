@@ -16,12 +16,12 @@ chrome.cookies.get({
         condition: {
           resourceTypes: ["main_frame"],
           requestMethods: ["get"],
-          urlFilter: "|https://github.com/|"
+          urlFilter: "|https://github.com/|",
+          isUrlFilterCaseSensitive: true
         }
       }],
       removeRuleIds: [1]
-    }
-    : {
+    } : {
       removeRuleIds: [1]
     }
   )
