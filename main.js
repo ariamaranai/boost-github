@@ -9,6 +9,7 @@ Element.prototype.addEventListener = function (a, b, c) {
     case "compositionend":
     case "compositionstart":
     case "compositionupdate":
+    case "contextmenu":
     case "dblclick":
     case "encrypted":
     case "error":
@@ -29,7 +30,6 @@ Element.prototype.addEventListener = function (a, b, c) {
       return EventTarget.prototype.addEventListener.call(this, a, b, c);
   }
 }
-  // var z = {};
 Object.prototype.hasOwnProperty.call = (a, b) => {
   switch (b) {
     case "aria-activedescendant":
